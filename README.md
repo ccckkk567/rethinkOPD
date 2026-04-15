@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
 
 # Rethinking On-Policy Distillation of Large Language Models:<br>Phenomenology, Mechanism, and Recipe
 
@@ -132,6 +132,32 @@ We use GRPO as the RL algorithm. To enable RL, set `ADV_ESTIMATOR=grpo` and `LOG
 
 > [!IMPORTANT]
 > **Non-thinking Models:** When training a non-thinking model (e.g., `Qwen3-1.7B (Non-thinking)`) using OPD or RL, you must add `+data.apply_chat_template_kwargs.enable_thinking=False` to the training script.
+
+### Validation
+
+We reuse the evaluation pipeline from [JustRL](https://github.com/thunlp/JustRL).
+
+**Generation (Optional)**
+
+```bash
+cd scripts/val/eval
+python gen_vllm.py
+```
+
+Before running generation, set `MODEL_NAMES` in `gen_vllm.py` to the checkpoint(s) you want to evaluate. And set appropriate `available_workers`.
+
+**Grading**
+
+```bash
+cd scripts/val/eval
+python grade.py
+```
+
+The grading script processes all JSONL files in the output directory and generates grading_results.json. If needed, you can enable the LLM-based verifier with:
+
+```bash
+python grade.py --enable_model_verifier
+```
 
 # 📨Contact
 

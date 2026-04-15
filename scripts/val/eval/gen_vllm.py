@@ -26,7 +26,7 @@ except ImportError:
 #                   Global constants / variables                              #
 # --------------------------------------------------------------------------- #
 DATA_DIR = "../data"
-MODEL_FOLDER = "../../model/Qwen3-1.7B-SFT-DAPO-4B-filtered"
+# MODEL_FOLDER = "../../model/Qwen3-1.7B-SFT-DAPO-4B-filtered"
 
 def extract_max_number(path):
     """Extract all numbers from a path and return the largest one for sorting."""
@@ -48,8 +48,8 @@ MODEL_NAMES = MODEL_NAMES_CANDIDATES
 MODEL_NAMES = ["../../model/Qwen3-4B"]
 
 TASKS = [
-    # {"name": "AIME24", "path": f"{DATA_DIR}/AIME24/test.parquet", "N": 16},
-    # {"name": "AIME25", "path": f"{DATA_DIR}/AIME25/test.parquet", "N": 16},
+    {"name": "AIME24", "path": f"{DATA_DIR}/AIME24/test.parquet", "N": 16},
+    {"name": "AIME25", "path": f"{DATA_DIR}/AIME25/test.parquet", "N": 16},
     {"name": "AMC23", "path": f"{DATA_DIR}/AMC23/test.parquet", "N": 16},
 ]
 
