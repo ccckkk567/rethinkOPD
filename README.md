@@ -20,11 +20,11 @@
 
 ---
 
-## News
+## 🎉News
 
 - **[2026-04-15]** We investigate the dynamics and mechanisms of on-policy distillation (OPD) of LLMs, and propose practical strategies to recover failing OPD. Check it out: [Paper](https://arxiv.org/pdf/2604.13016).
 
-## Overview
+## 📖Overview
 
 ![1776212644959](figs/opd_teaser.png)
 
@@ -36,7 +36,7 @@ Probing into the token-level mechanism, we show that successful OPD is character
 We further propose two practical strategies to recover failing OPD: off-policy cold start and teacher-aligned prompt selection.
 Finally, we show that OPD's apparent free lunch of dense token-level reward comes at a cost, raising the question of whether OPD can scale to long-horizon distillation.
 
-## Getting Started
+## ✨Getting Started
 
 ### Environment Setup
 
@@ -164,12 +164,12 @@ python grade.py --enable_model_verifier
 
 *All experiments were conducted on 8 x NVIDIA A800 80GB GPUs.*
 
-# 📨Contact
+## 📨Contact
 
 - Bingxiang He: hebx24@mails.tsinghua.edu.cn
 - Ning Ding: dingning@mail.tsinghua.edu.cn
 
-## Citation
+## 🎈Citation
 
 If you find this work helpful, please cite us:
 
