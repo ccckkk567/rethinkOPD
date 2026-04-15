@@ -50,7 +50,7 @@ USE_MEGATRON=0 bash scripts/install_vllm_sglang_mcore.sh
 pip install math-verify
 ```
 
-And we use [LlamaFactory](https://github.com/hiyouga/LLaMA-Factory) (v0.9.5) for SFT training:
+And we use [LlamaFactory](https://github.com/hiyouga/LLaMA-Factory) (v0.9.5) for SFT training. To prepare the environment for SFT:
 
 ```bash
 conda create -n sft python==3.11
